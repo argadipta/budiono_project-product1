@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styleproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery">
+                <img src="images/product 1.jpeg" alt="ps 5" id="product_Img">
+                <div class="controls">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+            </div>
+            <div class="details">
+                <h1>PS 5</h1>
+                <h2>Rp 8,000,000</h2>
+                <h3>Diskon 5%</h3>
+                <p>PlayStation 5 (disingkat PS5) merupakan konsol permainan yang dikembangkan oleh Sony Interactive Entertainment. </p>
+                <form>
+                    <div class="option">
+                        <p>Option :</p>
+                        <label for="disc-edition">
+                            <input type="radio" name="option" id="disc-edition">
+                            <span>PS 5 Disc Edition</span>
+                        </label>
+                        <label for="disc-marvel">
+                            <input type="radio" name="option" id="disc-marvel">
+                            <span>PS 5 Disc Marvel Edition</span>
+                        </label>
+                        <label for="disc-digital">
+                            <input type="radio" name="option" id="disc-digital">
+                            <span>PS 5 Disc Digital Edition</span>
+                        </label>
+                    </div>
+
+                    <div class="color">
+                        <p>Color</p>
+                        <label for="white">
+                            <input type="radio" name="color" id="white" data-image="images/product 1.jpeg">
+                            <span class="color-1"></span>
+                        </label>
+                        <label for="red">
+                            <input type="radio" name="color" id="red" data-image="images/product 2.jpeg">
+                            <span class="color-2"></span>
+                        </label>
+                        <label for="black">
+                            <input type="radio" name="color" id="black" data-image="images/product 3.jpeg">
+                            <span class="color-3"></span>
+                        </label>
+                    </div>
+
+                    <div class="quantity">
+                        <p>Quantity</p>
+                        <input type="number" id="quantity-input" value="1" min="1" max="100">
+                        <p id="stock-info"></p>
+                    </div>
+
+                    <button type="button" id="buy-button">Buy NOW!!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="scriptproduct.js" type="text/javascript"></script>
+</body>
+</html>
